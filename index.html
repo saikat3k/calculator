@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero-area">
+            <input type="number" name="" id="" class="num1"><br>
+            <input type="number" name="" id="" class="num2"><br>
+            <button class="btn1">+</button>
+            <button class="btn2">-</button>
+            <button class="btn3">*</button>
+            <button class="btn4">/</button>
+            <button class="result">=</button>
+            <p></p>
+        </div>
+    </div>
+
+    <script>
+        const num1 =document.querySelector('.num1')
+        const num2 =document.querySelector('.num2')
+        const plus =document.querySelector(".btn1")
+        const minus =document.querySelector(".btn2")
+        const multiply =document.querySelector(".btn3")
+        const devide =document.querySelector(".btn4")
+        const result =document.querySelector('.result')
+        const p =document.querySelector('p')
+        plus = Number(num1.value)+Number(num2.value);
+
+        result.addEventListener('click',()=>{
+            p.innerHTML =plus
+        })
+
+    </script>
+</body>
+</html>
